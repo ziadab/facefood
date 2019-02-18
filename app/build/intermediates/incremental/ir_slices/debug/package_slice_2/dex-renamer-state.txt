@@ -1,0 +1,4 @@
+#Mon Feb 18 16:53:43 WET 2019
+base.0=/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/transforms/dexMerger/debug/2
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "105668413024",
+    "firebase_url": "https://facefood-ac12a.firebaseio.com",
+    "project_id": "facefood-ac12a",
+    "storage_bucket": "facefood-ac12a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105668413024:android:0e8e792511dd0767",
+        "android_client_info": {
+          "package_name": "com.abouelfarah.facefood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105668413024-8cq7doou4bkptrmt9lheuu6s04ipnm9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHS_EHMUGMiFA4M5W54NKkMsyCphv_nuk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
