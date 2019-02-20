@@ -5,14 +5,108 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".signup">
+        tools:context=".Signup">
 
-    <TextView
-            android:text="HELLLLLLL"
-            android:layout_width="wrap_content"
+
+    <android.support.v7.widget.AppCompatButton
+            android:text="Select a photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/rounded_circle"
+            android:textColor="#000"
+            android:id="@+id/imgPicker" android:layout_marginTop="68dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.497"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:hint="Fullname"
+            android:id="@+id/textInputLayout"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/imgPicker"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:errorEnabled="true" app:layout_constraintHorizontal_bias="0.0">
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:id="@+id/username"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/hell" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+    app:errorEnabled="true">
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/hpff"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/hell"
+            app:errorEnabled="true" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp">
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            app:layout_constraintTop_toBottomOf="@+id/hpff"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="Re-type password"
+            android:id="@+id/hexll"
+            app:errorEnabled="true" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" android:layout_marginTop="452dp" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"/>
+            android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.0"
+            tools:layout_editor_absoluteY="460dp">
+        <android.support.design.widget.TextInputEditText
+                android:id="@+id/repws"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/hexll"
+            android:text="Register"
+            android:textColor="#000"
+            android:backgroundTint="#d3d3d3"
+            android:textStyle="bold"
+            app:cornerRadius="50dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:padding="15dp" android:id="@+id/register_now"/>
+
+
+
 </android.support.constraint.ConstraintLayout>
