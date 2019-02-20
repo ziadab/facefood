@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/766d7ae65f12798429f1ebd208c18aa7/res/values-mn/values.xml",
+                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/a7422468173b4fb11ae30ccf33291b6a/res/values-mn/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/bed42ca4dfa566b59c9e8964b6ec7a34/res/values-mn/values.xml",
+                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b7484526ceda3d5c6f9d95cff7e18c71/res/values-mn/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

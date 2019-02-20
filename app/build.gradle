@@ -13,6 +13,7 @@ android {
     defaultConfig {
         applicationId "com.abouelfarah.facefood"
         minSdkVersion 16
+        vectorDrawables.useSupportLibrary = true
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -34,6 +35,7 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     testImplementation 'junit:junit:4.12'
     implementation 'com.google.firebase:firebase-core:16.0.1'
+    api 'com.android.support:design:28.0.0-alpha3'
     implementation 'com.google.firebase:firebase-auth:16.1.0'
     implementation 'com.google.firebase:firebase-database:16.0.6'
     implementation 'com.google.firebase:firebase-storage:16.0.5'
@@ -48,4 +50,3 @@ dependencies {
 
 apply plugin: 'com.google.gms.google-services'
 com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
-

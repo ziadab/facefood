@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">facefood</string>
-    <string name="title_activity_main2">Main2Activity</string>
-    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="try_again">try again</string>
+    <string name="try_again_net">Please check your internet connection and try again</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
