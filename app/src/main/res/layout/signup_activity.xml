@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Fullname"
-            android:id="@+id/textInputLayout"
+            android:id="@+id/username_layer"
             android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/imgPicker"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
@@ -41,11 +41,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:id="@+id/hell" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/email_layer" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/username_layer" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
-    app:errorEnabled="true">
+            app:errorEnabled="true">
         <android.support.design.widget.TextInputEditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
@@ -59,9 +59,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:id="@+id/hpff"
+            android:id="@+id/pwd_layer"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/hell"
+            app:layout_constraintTop_toBottomOf="@+id/email_layer"
             app:errorEnabled="true" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp">
@@ -75,11 +75,11 @@
 
 
     <android.support.design.widget.TextInputLayout
-            app:layout_constraintTop_toBottomOf="@+id/hpff"
+            app:layout_constraintTop_toBottomOf="@+id/pwd_layer"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:hint="Re-type password"
-            android:id="@+id/hexll"
+            android:id="@+id/repwd_layer"
             app:errorEnabled="true" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp" app:layout_constraintHorizontal_bias="0.0"
@@ -96,7 +96,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@+id/hexll"
+            app:layout_constraintTop_toBottomOf="@+id/repwd_layer"
             android:text="Register"
             android:textColor="#000"
             android:backgroundTint="#d3d3d3"
