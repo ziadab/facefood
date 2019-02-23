@@ -24,25 +24,25 @@ class Signup2 : AppCompatActivity() {
 
         finish.setOnClickListener {
 
-
-            if (passwordValid(pwd)) {
                 if (pwd == repwd) {
                     Toast.makeText(this, "I'm Writing code after connecting to the net :')", Toast.LENGTH_SHORT).show()
                     FirebaseAuth.getInstance().signInWithEmailAndPassword(email, pwd).addOnCompleteListener {
                         if(!it.isSuccessful) return@addOnCompleteListener
                         Log.d("Registration", "Shit Is done with id : ${it.result!!.user.uid}")
                     }.addOnFailureListener {
-                        Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
+                        if("password" in it.message!!.toLowerCase()){
+                            pwd_layer.error = "Password must have at lease 8 characters"
+                        }else{
+                            Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
+                        }
                     }
-
                 }else{
                     re_pwd_layer.error = "Password are not the SAME"
                 }
-            }else{
-                pwd_layer.error = "Password must have at lease 8 characters"
-            }
 
         }
+
+
 
         back.setOnClickListener {
             val int = Intent(this, Signup::class.java)
@@ -50,7 +50,4 @@ class Signup2 : AppCompatActivity() {
         }
     }
 
-    private fun passwordValid(pwd:String):Boolean{
-        return pwd.length > 8
-    }
 }
