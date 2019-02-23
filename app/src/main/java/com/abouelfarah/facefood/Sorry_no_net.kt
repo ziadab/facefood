@@ -20,7 +20,8 @@ class Sorry_no_net : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }else{
-                Toast.makeText(this, "Sorry, we could not connect to the Internet :')", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(this, "يا ايها الزنج الابيض هل تتمسخر معي ؟", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Sorry, we could not connect to the internet :')", Toast.LENGTH_SHORT).show()
             }
         }
     }

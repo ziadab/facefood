@@ -32,9 +32,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.abouelfarah.facefood.Sorry_no_net" >
+        <activity android:name="com.abouelfarah.facefood.Signup2" >
         </activity>
         <activity android:name="com.abouelfarah.facefood.Signup" >
+        </activity>
+        <activity android:name="com.abouelfarah.facefood.LoginActivity" >
+        </activity>
+        <activity android:name="com.abouelfarah.facefood.Sorry_no_net" >
         </activity>
         <activity android:name="com.abouelfarah.facefood.MainActivity" >
             <intent-filter>
