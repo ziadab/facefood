@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed(Runnable {
             if(checkthenet()){
-                var intent = Intent(this, Signup::class.java)
+                var intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
                 finish()
             }else {

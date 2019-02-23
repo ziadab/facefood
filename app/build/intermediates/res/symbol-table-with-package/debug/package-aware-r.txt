@@ -1070,6 +1070,7 @@ drawable notify_panel_notification_icon_bg
 drawable rounded_circle
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font roboto_medium
 id ALT
 id CTRL
 id FUNCTION

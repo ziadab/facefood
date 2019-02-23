@@ -25,7 +25,7 @@ class Signup2 : AppCompatActivity() {
         finish.setOnClickListener {
 
 
-            if (passwordValid(pwd) && passwordValid(repwd)) {
+            if (passwordValid(pwd)) {
                 if (pwd == repwd) {
                     Toast.makeText(this, "I'm Writing code after connecting to the net :')", Toast.LENGTH_SHORT).show()
                     FirebaseAuth.getInstance().signInWithEmailAndPassword(email, pwd).addOnCompleteListener {

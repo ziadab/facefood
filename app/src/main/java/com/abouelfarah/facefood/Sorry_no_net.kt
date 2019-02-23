@@ -16,7 +16,7 @@ class Sorry_no_net : AppCompatActivity() {
 
         try_again_button_in_no_net.setOnClickListener {
             if (checkthenet()){
-                var intent = Intent(this, Signup::class.java)
+                var intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
                 finish()
             }else{
