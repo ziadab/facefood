@@ -23,5 +23,5 @@ android:background="@color/colorPrimary">
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.495" android:textSize="30sp"
             android:textStyle="bold"
-    android:textColor="@color/colorPrimaryDark"/>
+            android:textColor="@color/colorPrimaryDark" android:fontFamily="@font/roboto_medium"/>
 </android.support.constraint.ConstraintLayout>

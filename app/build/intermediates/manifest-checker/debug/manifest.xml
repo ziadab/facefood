@@ -32,6 +32,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.abouelfarah.facefood.Menu" >
+        </activity>
         <activity android:name="com.abouelfarah.facefood.Signup2" >
         </activity>
         <activity android:name="com.abouelfarah.facefood.Signup" >
