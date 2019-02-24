@@ -37,15 +37,15 @@
         </activity>
         <activity android:name="com.abouelfarah.facefood.Menu" >
         </activity>
-        <activity android:name="com.abouelfarah.facefood.Signup2" >
+        <activity android:name="com.abouelfarah.facefood.Signup.Signup2" >
         </activity>
-        <activity android:name="com.abouelfarah.facefood.Signup" >
+        <activity android:name="com.abouelfarah.facefood.Signup.Signup" >
         </activity>
-        <activity android:name="com.abouelfarah.facefood.LoginActivity" >
+        <activity android:name="com.abouelfarah.facefood.login.LoginActivity" >
         </activity>
-        <activity android:name="com.abouelfarah.facefood.Sorry_no_net" >
+        <activity android:name="com.abouelfarah.facefood.no_net.Sorry_no_net" >
         </activity>
-        <activity android:name="com.abouelfarah.facefood.MainActivity" >
+        <activity android:name="com.abouelfarah.facefood.no_net.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -73,11 +73,6 @@
                 android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
-
-        <provider
-            android:name="com.squareup.picasso.PicassoProvider"
-            android:authorities="com.abouelfarah.facefood.com.squareup.picasso"
-            android:exported="false" />
 
         <receiver
             android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
@@ -143,6 +138,11 @@
         <meta-data
             android:name="android.support.VERSION"
             android:value="26.1.0" />
+
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.abouelfarah.facefood.com.squareup.picasso"
+            android:exported="false" />
     </application>
 
 </manifest>

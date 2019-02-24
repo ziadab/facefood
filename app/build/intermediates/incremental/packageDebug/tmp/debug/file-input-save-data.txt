@@ -1,11 +1,7 @@
 #Internal package file, do not edit.
-#Sun Feb 24 12:45:16 WET 2019
-1.base=/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+#Sun Feb 24 19:10:53 WET 2019
 0.baseType=DIRECTORY
-1.baseType=DIRECTORY
-count=2
-1.set=ASSET
+0.base=/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/dex/debug/mergeDexDebug/out
 0.path=classes.dex
 0.set=DEX
-0.base=/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/dex/debug/mergeDexDebug/out
-1.path=materialdesignicons-webfont.ttf
+count=1

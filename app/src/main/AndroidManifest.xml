@@ -15,15 +15,15 @@
         </activity>
         <activity android:name=".Menu">
         </activity>
-        <activity android:name=".Signup2">
+        <activity android:name=".Signup.Signup2">
         </activity>
-        <activity android:name=".Signup">
+        <activity android:name=".Signup.Signup">
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".login.LoginActivity">
         </activity>
-        <activity android:name=".Sorry_no_net">
+        <activity android:name=".no_net.Sorry_no_net">
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".no_net.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
