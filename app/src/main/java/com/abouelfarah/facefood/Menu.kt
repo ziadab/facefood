@@ -7,6 +7,7 @@ import android.support.v4.view.GravityCompat
 import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.widget.Toolbar
+import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 
 class Menu : AppCompatActivity() {
@@ -14,7 +15,9 @@ class Menu : AppCompatActivity() {
     var drawer: DrawerLayout? = null
 
     private fun verifyLogin() {
-        val uid = FirebaseAuth.getInstance().uid
+        Log.d("VERIFYING", "IT4S DOING")
+        val uid = FirebaseAuth.getInstance().currentUser
+        //Log.d("VERIFYING", uid)
         if (uid == null) {
             val it = Intent(this, LoginActivity::class.java)
             it.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -34,19 +37,20 @@ class Menu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
+        verifyLogin()
+
         val tlb: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(tlb)
 
         drawer = findViewById(R.id.drawer_layer)
 
-        val toogle =
-            ActionBarDrawerToggle(this, drawer, tlb, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
+        val toogle = ActionBarDrawerToggle(this, drawer, tlb, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
 
         drawer!!.addDrawerListener(toogle)
         toogle.syncState()
 
 
 
-        verifyLogin()
+        //verifyLogin()
     }
 }

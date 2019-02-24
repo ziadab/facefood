@@ -7,7 +7,6 @@ import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_signup.*
 import kotlinx.android.synthetic.main.activity_signup2.*
 
 class Signup2 : AppCompatActivity() {
@@ -32,7 +31,7 @@ class Signup2 : AppCompatActivity() {
                 if (pwd == repwd) {
                     //Toast.makeText(this, "I'm Writing code after connecting to the net :')", Toast.LENGTH_SHORT).show()
 
-                    FirebaseAuth.getInstance().signInWithEmailAndPassword(email, pwd).addOnCompleteListener {
+                    FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, pwd).addOnCompleteListener {
                         if (!it.isSuccessful) return@addOnCompleteListener
                         Log.d("Registration", "Shit Is done with id : ${it.result!!.user.uid}")
 
@@ -67,9 +66,9 @@ class Signup2 : AppCompatActivity() {
         val ref = FirebaseDatabase.getInstance().getReference("/users/${uid}")
         val user = User(
             uid,
-            first_name.text.toString(),
-            last_name.text.toString(),
-            email.text.toString(),
+            intent.getStringExtra("firstName"),
+            intent.getStringExtra("lastName"),
+            intent.getStringExtra("email"),
             pwd_from_signup2.text.toString()
         )
         ref.setValue(user).addOnSuccessListener {

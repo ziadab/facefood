@@ -15,6 +15,7 @@ MERGED from [com.google.firebase:firebase-database:16.0.6] /home/zeus/.gradle/ca
 MERGED from [com.google.firebase:firebase-storage:16.0.5] /home/zeus/.gradle/caches/transforms-1/files-1.1/firebase-storage-16.0.5.aar/ddd23ddc530c781f6f6cd8c9f69b3455/AndroidManifest.xml:15:1-26:12
 MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/2ed693a42c15d968a5c19e2c805fa170/AndroidManifest.xml:2:1-11:12
 MERGED from [com.xwray:groupie:2.1.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/groupie-2.1.0.aar/98c0f909fe18a9867862b849777e4956/AndroidManifest.xml:2:1-14:12
+MERGED from [net.steamcrafted:materialiconlib:1.1.5] /home/zeus/.gradle/caches/transforms-1/files-1.1/materialiconlib-1.1.5.aar/ebe7e0c40739c3399008a0cd35774abf/AndroidManifest.xml:2:1-14:12
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/zeus/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/3ee20c7a5d9aa8866e196302b089d8f9/AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/71752916ad3ac7b1c5c98b9e117573e2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/zeus/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/43e0f28eae0d183d74704abb272487c4/AndroidManifest.xml:17:1-34:12
@@ -94,6 +95,8 @@ MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/zeus/.gradle/caches/trans
 MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/2ed693a42c15d968a5c19e2c805fa170/AndroidManifest.xml:9:5-20
 MERGED from [com.xwray:groupie:2.1.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/groupie-2.1.0.aar/98c0f909fe18a9867862b849777e4956/AndroidManifest.xml:11:5-12:19
 MERGED from [com.xwray:groupie:2.1.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/groupie-2.1.0.aar/98c0f909fe18a9867862b849777e4956/AndroidManifest.xml:11:5-12:19
+MERGED from [net.steamcrafted:materialiconlib:1.1.5] /home/zeus/.gradle/caches/transforms-1/files-1.1/materialiconlib-1.1.5.aar/ebe7e0c40739c3399008a0cd35774abf/AndroidManifest.xml:11:5-12:19
+MERGED from [net.steamcrafted:materialiconlib:1.1.5] /home/zeus/.gradle/caches/transforms-1/files-1.1/materialiconlib-1.1.5.aar/ebe7e0c40739c3399008a0cd35774abf/AndroidManifest.xml:11:5-12:19
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/zeus/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/3ee20c7a5d9aa8866e196302b089d8f9/AndroidManifest.xml:7:5-12:19
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/zeus/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/3ee20c7a5d9aa8866e196302b089d8f9/AndroidManifest.xml:7:5-12:19
 MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/zeus/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/43e0f28eae0d183d74704abb272487c4/AndroidManifest.xml:26:5-32:19
@@ -212,6 +215,8 @@ MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/zeus/.gradle/caches/trans
 MERGED from [de.hdodenhof:circleimageview:3.0.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/2ed693a42c15d968a5c19e2c805fa170/AndroidManifest.xml:5:5-7:41
 MERGED from [com.xwray:groupie:2.1.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/groupie-2.1.0.aar/98c0f909fe18a9867862b849777e4956/AndroidManifest.xml:7:5-9:41
 MERGED from [com.xwray:groupie:2.1.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/groupie-2.1.0.aar/98c0f909fe18a9867862b849777e4956/AndroidManifest.xml:7:5-9:41
+MERGED from [net.steamcrafted:materialiconlib:1.1.5] /home/zeus/.gradle/caches/transforms-1/files-1.1/materialiconlib-1.1.5.aar/ebe7e0c40739c3399008a0cd35774abf/AndroidManifest.xml:7:5-9:41
+MERGED from [net.steamcrafted:materialiconlib:1.1.5] /home/zeus/.gradle/caches/transforms-1/files-1.1/materialiconlib-1.1.5.aar/ebe7e0c40739c3399008a0cd35774abf/AndroidManifest.xml:7:5-9:41
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/zeus/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/3ee20c7a5d9aa8866e196302b089d8f9/AndroidManifest.xml:5:5-44
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/zeus/.gradle/caches/transforms-1/files-1.1/picasso-2.71828.aar/3ee20c7a5d9aa8866e196302b089d8f9/AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/zeus/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/71752916ad3ac7b1c5c98b9e117573e2/AndroidManifest.xml:20:5-44
