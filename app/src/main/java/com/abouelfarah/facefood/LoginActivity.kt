@@ -15,18 +15,23 @@ class LoginActivity : AppCompatActivity() {
 
         login.setOnClickListener {
 
-            if(email_from_login.text!!.isEmpty()){
+            if (email_from_login.text!!.isEmpty()) {
                 email_layer_from_login.error = "Please enter your email"
-            }else if(pwd_login.text!!.isEmpty()){
+            } else if (pwd_login.text!!.isEmpty()) {
                 pwd_layer_from_login.error = "Please enter your password"
-            }else{
-                FirebaseAuth.getInstance().signInWithEmailAndPassword(email_from_login.text.toString(), pwd_login.text.toString()).addOnSuccessListener {
-                    val it = Intent(this, Menu::class.java)
-                    it.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
-                    startActivity(it)
-                }.addOnFailureListener {
-                    Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
-                }
+            } else {
+                email_layer_from_login.error = null
+                pwd_layer_from_login.error = null
+
+                FirebaseAuth.getInstance()
+                    .signInWithEmailAndPassword(email_from_login.text.toString(), pwd_login.text.toString())
+                    .addOnSuccessListener {
+                        val itents = Intent(this, Menu::class.java)
+                        itents.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                        startActivity(itents)
+                    }.addOnFailureListener {
+                        Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
+                    }
             }
 
         }
@@ -35,7 +40,5 @@ class LoginActivity : AppCompatActivity() {
             val int = Intent(this, Signup::class.java)
             startActivity(int)
         }
-
-
     }
 }

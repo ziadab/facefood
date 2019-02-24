@@ -12,16 +12,26 @@ android:background="@color/colorPrimary">
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.409"/>
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.345"/>
     <TextView
             android:text="FACEFOOD"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView" android:layout_marginTop="44dp"
+            android:id="@+id/facefood" android:layout_marginTop="44dp"
             app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.495" android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark" android:fontFamily="@font/roboto_medium"/>
+    <TextView
+            android:text="I Love eat... I Like it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subtext" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/facefood"
+            android:textSize="24sp" android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/roboto_medium"/>
 </android.support.constraint.ConstraintLayout>
