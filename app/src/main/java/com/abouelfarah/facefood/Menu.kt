@@ -36,8 +36,13 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
                 val user = p0.getValue(User::class.java)
                 Log.d("USERXXX", p0.toString())
                 if (user != null) {
-                    username_from_menu.text = "${user?.firstName} ${user?.lastName}"
                     email_from_menu.text = user!!.email
+                    if(user!!.firstName == null || user!!.lastName == null){
+                        updateUserUI()
+                    }else{
+                        username_from_menu.text = "${user!!.firstName} ${user!!.lastName}"
+                    }
+
                 }
             }
 
@@ -48,7 +53,7 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
     private fun verifyLogin() {
         Log.d("VERIFYING", "IT4S DOING")
-        val uid = FirebaseAuth.getInstance().getCurrentUser()
+        val uid = FirebaseAuth.getInstance().currentUser
         //Log.d("VERIFYING", uid)
         if (uid == null) {
             val it = Intent(this, LoginActivity::class.java)
