@@ -1,5 +1,6 @@
 package com.abouelfarah.facefood
 
+import android.app.Dialog
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -11,6 +12,9 @@ import android.support.v7.widget.Toolbar
 import android.util.Log
 import android.view.Gravity
 import android.view.MenuItem
+import android.view.View
+import android.widget.LinearLayout
+import android.widget.Toast
 import com.abouelfarah.facefood.fragment.favorite_fragment
 import com.abouelfarah.facefood.fragment.menu_fragment
 import com.abouelfarah.facefood.fragment.share_fragment
@@ -71,6 +75,8 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val dialog:Dialog?=null
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
@@ -82,6 +88,17 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         drawer = findViewById(R.id.drawer_layer)
 
         var navigationViewer:NavigationView = findViewById(R.id.nav_view)
+
+        val headerview:View = navigationViewer.getHeaderView(0)
+        var header = headerview.findViewById<LinearLayout>(R.id.header)
+
+        header.setOnClickListener(object:View.OnClickListener {
+            override fun onClick(v:View) {
+                supportFragmentManager.beginTransaction().replace(R.id.fragment_container, update_img()).commit()
+                drawer!!.closeDrawer(GravityCompat.START)
+            }
+        })
+
         navigationViewer.setNavigationItemSelectedListener(this)
 //        navigationViewer.setCheckedItem(R.id.menuOfFood)
 //        navigationViewer.menu.getItem(0).setChecked(true)
@@ -95,6 +112,12 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
         updateUserUI()
 
+
+
+//        profile_img_from_menu.setOnClickListener {
+//            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, update_img()).commit()
+//        }
+
         //supportFragmentManager.beginTransaction().replace(R.id.fragment_container, menu_fragment()).commit()
 
         //verifyLogin()
@@ -103,6 +126,7 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
 
         when(p0.itemId){
+            // R.id.profile_img_from_menu -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, update_img()).commit()
             R.id.menuOfFood -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, menu_fragment()).commit()
             R.id.specialOffer -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, favorite_fragment()).commit()
             R.id.shared_picture -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, share_fragment()).commit()

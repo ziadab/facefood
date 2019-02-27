@@ -1133,6 +1133,7 @@ id center
 id center_horizontal
 id center_vertical
 id chains
+id change_my_profile_img
 id checkbox
 id chronometer
 id clip_horizontal
@@ -1184,7 +1185,9 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id header
 id hell
+id hmm
 id home
 id homeAsUp
 id icon
@@ -1194,6 +1197,7 @@ id ifRoom
 id image
 id imageButton
 id imageView
+id imgSelecter
 id info
 id invisible
 id italic
@@ -1238,6 +1242,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id profile_img_from_menu
 id progress_circular
 id progress_horizontal
 id pwd_from_signup2
@@ -1408,6 +1413,7 @@ layout design_text_input_password_icon
 layout fragment_favorite
 layout fragment_menu
 layout fragment_share
+layout fragment_update_img
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header
