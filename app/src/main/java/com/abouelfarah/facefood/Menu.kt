@@ -1,6 +1,5 @@
 package com.abouelfarah.facefood
 
-import android.app.Dialog
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -14,7 +13,6 @@ import android.view.Gravity
 import android.view.MenuItem
 import android.view.View
 import android.widget.LinearLayout
-import android.widget.Toast
 import com.abouelfarah.facefood.fragment.favorite_fragment
 import com.abouelfarah.facefood.fragment.menu_fragment
 import com.abouelfarah.facefood.fragment.share_fragment
@@ -25,6 +23,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.nav_header.*
 
 class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -40,13 +39,16 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
                 val user = p0.getValue(User::class.java)
                 Log.d("USERXXX", p0.toString())
                 if (user != null) {
-                    email_from_menu.text = user!!.email
-                    if(user!!.firstName == null || user!!.lastName == null){
-                        updateUserUI()
-                    }else{
-                        username_from_menu.text = "${user!!.firstName} ${user!!.lastName}"
+                    email_from_menu.text = user.email
+                    try {
+                        username_from_menu.text = "${user.firstName} ${user.lastName}"
+                        if (user.profileImg != null) {
+                            Picasso.get().load(user.profileImg).into(profile_img_from_menu)
+                        }
+                    } catch (ex: Exception) {
+                        username_from_menu.text =
+                            "${intent.getStringExtra("first_name")} ${intent.getStringExtra("last_name")}"
                     }
-
                 }
             }
 
@@ -75,26 +77,26 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val dialog:Dialog?=null
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        verifyLogin()
+        //verifyLogin()
 
         val tlb: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(tlb)
 
         drawer = findViewById(R.id.drawer_layer)
 
-        var navigationViewer:NavigationView = findViewById(R.id.nav_view)
+        var navigationViewer: NavigationView = findViewById(R.id.nav_view)
 
-        val headerview:View = navigationViewer.getHeaderView(0)
+        val headerview: View = navigationViewer.getHeaderView(0)
         var header = headerview.findViewById<LinearLayout>(R.id.header)
 
-        header.setOnClickListener(object:View.OnClickListener {
-            override fun onClick(v:View) {
-                supportFragmentManager.beginTransaction().replace(R.id.fragment_container, update_img()).commit()
+        header.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View) {
+                val intss = Intent(this@Menu, update_img::class.java)
+                startActivity(intss)
                 drawer!!.closeDrawer(GravityCompat.START)
             }
         })
@@ -112,8 +114,6 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
         updateUserUI()
 
-
-
 //        profile_img_from_menu.setOnClickListener {
 //            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, update_img()).commit()
 //        }
@@ -125,11 +125,20 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
 
-        when(p0.itemId){
+        when (p0.itemId) {
             // R.id.profile_img_from_menu -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, update_img()).commit()
-            R.id.menuOfFood -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, menu_fragment()).commit()
-            R.id.specialOffer -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, favorite_fragment()).commit()
-            R.id.shared_picture -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, share_fragment()).commit()
+            R.id.menuOfFood -> supportFragmentManager.beginTransaction().replace(
+                R.id.fragment_container,
+                menu_fragment()
+            ).commit()
+            R.id.specialOffer -> supportFragmentManager.beginTransaction().replace(
+                R.id.fragment_container,
+                favorite_fragment()
+            ).commit()
+            R.id.shared_picture -> supportFragmentManager.beginTransaction().replace(
+                R.id.fragment_container,
+                share_fragment()
+            ).commit()
             R.id.logout -> {
                 FirebaseAuth.getInstance().signOut()
                 val int = Intent(this, LoginActivity::class.java)
@@ -141,5 +150,4 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         drawer!!.closeDrawer(Gravity.START)
         return true
     }
-
 }

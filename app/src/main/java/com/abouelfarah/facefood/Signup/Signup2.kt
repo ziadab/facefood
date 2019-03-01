@@ -41,6 +41,8 @@ class Signup2 : AppCompatActivity() {
                         saveUserInDataBase(it.result!!.user.uid)
 
                         val its = Intent(this, Menu::class.java)
+                        its.putExtra("first_name", first_name)
+                        its.putExtra("last_name", last_name)
                         its.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
                         startActivity(its)
 
@@ -72,7 +74,8 @@ class Signup2 : AppCompatActivity() {
             intent.getStringExtra("firstName"),
             intent.getStringExtra("lastName"),
             intent.getStringExtra("email"),
-            pwd_from_signup2.text.toString()
+            pwd_from_signup2.text.toString(),
+            null
         )
         ref.setValue(user).addOnSuccessListener {
             val its = Intent(this, Menu::class.java)

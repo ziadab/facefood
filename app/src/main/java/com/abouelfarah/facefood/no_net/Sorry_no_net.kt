@@ -6,6 +6,7 @@ import android.net.ConnectivityManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.abouelfarah.facefood.Menu
 import com.abouelfarah.facefood.R
 import com.abouelfarah.facefood.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_sorry_no_net.*
@@ -18,7 +19,8 @@ class Sorry_no_net : AppCompatActivity() {
 
         try_again_button_in_no_net.setOnClickListener {
             if (checkthenet()) {
-                var intent = Intent(this, LoginActivity::class.java)
+                // var intent = Intent(this, LoginActivity::class.java)
+                var intent = Intent(this, Menu::class.java)
                 startActivity(intent)
                 finish()
             } else {
