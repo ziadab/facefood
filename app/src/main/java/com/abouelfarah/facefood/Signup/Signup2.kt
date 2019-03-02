@@ -11,6 +11,7 @@ import com.abouelfarah.facefood.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_signup2.*
+import maes.tech.intentanim.CustomIntent.customType
 
 class Signup2 : AppCompatActivity() {
 
@@ -64,6 +65,7 @@ class Signup2 : AppCompatActivity() {
         back.setOnClickListener {
             val int = Intent(this, Signup::class.java)
             startActivity(int)
+            customType(this, "right-to-left")
         }
     }
 
@@ -81,6 +83,7 @@ class Signup2 : AppCompatActivity() {
             val its = Intent(this, Menu::class.java)
             its.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
             startActivity(its)
+            customType(this, "bottom-to-up")
         }.addOnFailureListener {
             Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
         }

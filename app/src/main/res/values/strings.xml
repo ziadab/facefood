@@ -104,17 +104,17 @@
     </string>
 
     <string name="thlaText">
-    "Material is the metaphor.\n\n"
+        "Material is the metaphor.\n\n"
 
-    "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-    "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-    "technologically advanced and open to imagination and magic.\n"
-    "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-    "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-    "flexibility of the material creates new affordances that supercede those in the physical "
-    "world, without breaking the rules of physics.\n"
-    "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-    "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
         "seams, divides space, and indicates moving parts.\n\n"
     </string>
 
@@ -128,6 +128,19 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_example">Example action</string>
+
+    <string name="new_message_notification_title_template">New message: %1$s</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="new_message_notification_placeholder_text_template">You said %1$s and lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit vel semper venenatis, magna odio volutpat
+        velit, at ullamcorper nulla lacus sed turpis. Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed
+        nisl sem, ullamcorper ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis
+        viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec tortor.
+    </string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
 
 
 </resources>

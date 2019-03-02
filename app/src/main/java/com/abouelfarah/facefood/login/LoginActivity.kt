@@ -7,6 +7,7 @@ import android.widget.Toast
 import com.abouelfarah.facefood.Menu
 import com.abouelfarah.facefood.R
 import com.abouelfarah.facefood.Signup.Signup
+import maes.tech.intentanim.CustomIntent.customType
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -32,6 +33,8 @@ class LoginActivity : AppCompatActivity() {
                         val itents = Intent(this, Menu::class.java)
                         itents.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                         startActivity(itents)
+                        customType(this, "bottom-to-up")
+
                     }.addOnFailureListener {
                         Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
                     }
@@ -42,6 +45,7 @@ class LoginActivity : AppCompatActivity() {
         register_now.setOnClickListener {
             val int = Intent(this, Signup::class.java)
             startActivity(int)
+            customType(this, "left-to-right")
         }
     }
 }

@@ -937,6 +937,10 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1058,6 +1062,8 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_action_stat_reply
+drawable ic_action_stat_share
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1085,6 +1091,7 @@ drawable notify_panel_notification_icon_bg
 drawable rounded_circle
 drawable signout
 drawable steven_universe
+drawable thla
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font roboto_medium
@@ -1254,6 +1261,7 @@ id pwd_login
 id radio
 id re_pwd_from_signup2
 id re_pwd_layer
+id recyclerViewer_from_favorite_fragment
 id recyclerViewer_from_fragment_menu
 id register_now
 id right
@@ -1400,6 +1408,7 @@ layout activity_menu
 layout activity_signup
 layout activity_signup2
 layout activity_sorry_no_net
+layout activity_update_img
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1414,11 +1423,11 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout favorite_card
 layout food_card
 layout fragment_favorite
 layout fragment_menu
 layout fragment_share
-layout fragment_update_img
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header
@@ -1484,7 +1493,9 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_example
+string action_reply
 string action_settings
+string action_share
 string app_name
 string appbar_scrolling_view_behavior
 string back
@@ -1527,6 +1538,8 @@ string login
 string mtrl_chip_close_icon_content_description
 string navigation_drawer_close
 string navigation_drawer_open
+string new_message_notification_placeholder_text_template
+string new_message_notification_title_template
 string next
 string password_toggle_content_description
 string path_password_eye

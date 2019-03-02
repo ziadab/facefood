@@ -10,7 +10,7 @@ import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
-import kotlinx.android.synthetic.main.fragment_update_img.*
+import kotlinx.android.synthetic.main.activity_update_img.*
 import java.util.UUID
 
 class update_img : AppCompatActivity() {
@@ -36,7 +36,7 @@ class update_img : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_update_img)
+        setContentView(R.layout.activity_update_img)
         imgSelecter.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/JPEG"

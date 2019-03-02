@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.abouelfarah.facefood.login.LoginActivity
 import com.abouelfarah.facefood.R
 import kotlinx.android.synthetic.main.activity_signup.*
+import maes.tech.intentanim.CustomIntent
 
 class Signup : AppCompatActivity() {
 
@@ -26,6 +27,7 @@ class Signup : AppCompatActivity() {
                 int.putExtra("lastName", lastName)
                 int.putExtra("email", email)
                 startActivity(int)
+                CustomIntent.customType(this, "left-to-right")
             } else {
                 if (firstName.isEmpty()) {
                     firstName_layer.error = "Please check your first name"
@@ -44,6 +46,7 @@ class Signup : AppCompatActivity() {
         login_from_signup.setOnClickListener {
             val int = Intent(this, LoginActivity::class.java)
             startActivity(int)
+            CustomIntent.customType(this, "right-to-left")
         }
     }
 }

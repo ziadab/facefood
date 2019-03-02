@@ -20,7 +20,7 @@
             android:textStyle="bold" android:gravity="center"/>
 
         <android.support.design.button.MaterialButton
-                app:cornerRadius="250dp"
+                app:cornerRadius="350dp"
                 android:text="Select a picture"
                 android:layout_width="250dp"
                 android:layout_height="250dp"

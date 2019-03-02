@@ -60,7 +60,7 @@
                     android:layout_alignParentRight="true"
                     android:text="OK THank u. NEXT !!!"
                     android:textColor="@color/primaryDarkColor"
-                    app:backgroundTint="#EBEBEB"/>
+                    app:backgroundTint="#fff"/>
 
             <android.support.design.button.MaterialButton
                     android:layout_marginEnd="12dp"
@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:text="GO TO HELL"
                     android:textColor="@color/primaryDarkColor"
-                    app:backgroundTint="#EBEBEB"/>
+                    app:backgroundTint="#fff"/>
 
         </RelativeLayout>
 
