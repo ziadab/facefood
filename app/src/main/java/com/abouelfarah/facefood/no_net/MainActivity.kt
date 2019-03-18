@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.abouelfarah.facefood.Menu
 import com.abouelfarah.facefood.R
+import maes.tech.intentanim.CustomIntent
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,10 +20,12 @@ class MainActivity : AppCompatActivity() {
             if (checkthenet()) {
                 var intent = Intent(this, Menu::class.java)
                 startActivity(intent)
+                CustomIntent.customType(this, "bottom-to-up")
                 finish()
             } else {
                 var intent = Intent(this, Sorry_no_net::class.java)
                 startActivity(intent)
+                CustomIntent.customType(this, "bottom-to-up")
                 finish()
             }
 

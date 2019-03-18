@@ -2,13 +2,13 @@
 <instant-run
     abi="x86"
     api-level="26"
-    build-mode="HOT_WARM"
+    build-mode="COLD"
     density="420dpi"
     format="10"
     plugin-version="3.3.1"
-    timestamp="1551542178819"
+    timestamp="1552246591835"
     token="1141444869257990887"
-    verifier="COMPATIBLE" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
@@ -23,16 +23,15 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-        type="SPLIT" />
-
     <build
         build-mode="FULL"
-        timestamp="1551541970720"
+        timestamp="1552245991588"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -41,13 +40,13 @@
             location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
             location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
@@ -59,25 +58,12 @@
             location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
-        <artifact
-            location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
     </build>
     <build
-        build-mode="HOT_WARM"
-        timestamp="1551542178819"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
-    </build>
+        build-mode="COLD"
+        timestamp="1552246591835"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
