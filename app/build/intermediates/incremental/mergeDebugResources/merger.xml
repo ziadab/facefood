@@ -3663,7 +3663,7 @@
         <item name="android:textColor">#ECEFF1</item>
     </style><style name="grr" parent="@android:style/TextAppearance">
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">#d3d3d3</item>-->
+        <item name="android:textColor">#d3d3d3</item>
     </style></file><file path="/home/zeus/AndroidStudioProjects/facefood/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">Facefood</string><string name="try_again">try again</string><string name="try_again_net">Please check your internet connection and try again</string><string name="first_name">First Name</string><string name="last_name">Last Name</string><string name="email">Email</string><string name="pwd">Password</string><string name="re_pwd">Retype Password</string><string name="next">Next</string><string name="back">Back</string><string name="login">Login</string><string name="register_now">Register Now</string><string name="large_text">
         "Material is the metaphor.\n\n"
 

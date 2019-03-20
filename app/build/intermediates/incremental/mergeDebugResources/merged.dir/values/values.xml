@@ -3104,7 +3104,7 @@
     </style>
     <style name="grr" parent="@android:style/TextAppearance">
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">#d3d3d3</item>-->
+        <item name="android:textColor">#d3d3d3</item>
     </style>
     <style name="hmm" parent="@android:style/TextAppearance">
         <item name="android:textSize">28sp</item>

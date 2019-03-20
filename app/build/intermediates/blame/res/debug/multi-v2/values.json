@@ -147,20 +147,20 @@
                 {
                     "source": "/home/zeus/AndroidStudioProjects/facefood/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "3,-1,19,15",
-                        "startColumns": "4,-1,4,4",
-                        "startOffsets": "54,-1,718,539",
-                        "endLines": "8,-1,22,18",
-                        "endColumns": "12,-1,12,12",
-                        "endOffsets": "382,-1,895,713"
+                        "startLines": "3,-1,19,-1",
+                        "startColumns": "4,-1,4,-1",
+                        "startOffsets": "54,-1,718,-1",
+                        "endLines": "8,-1,22,-1",
+                        "endColumns": "12,-1,12,-1",
+                        "endOffsets": "382,-1,892,-1"
                     },
                     "to": {
                         "startLines": "765,771,3104,3108",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "49567,49900,202032,202214",
+                        "startOffsets": "49567,49900,202032,202211",
                         "endLines": "770,774,3107,3111",
                         "endColumns": "12,12,12,12",
-                        "endOffsets": "49895,50045,202209,202388"
+                        "endOffsets": "49895,50045,202206,202385"
                     }
                 },
                 {
