@@ -4,7 +4,7 @@
             "outputFile": "/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
-                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/693d4c78b5d29f1f050623ff9532c8cd/res/values-zh-rHK/values-zh-rHK.xml",
+                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/082b73699dcb1540750a59e1516b1c5b/res/values-zh-rHK/values-zh-rHK.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/a7422468173b4fb11ae30ccf33291b6a/res/values-zh-rHK/values.xml",
+                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/f2456eba70fcf6039b60003876961c84/res/values-zh-rHK/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/b7484526ceda3d5c6f9d95cff7e18c71/res/values-zh-rHK/values.xml",
+                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/1fd61374cfab212916f9db60fb904cdd/res/values-zh-rHK/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/18b924ee246f6e3ba9a7df79fcad1668/res/values-zh-rHK/values-zh-rHK.xml",
+                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/dd0c8ff6c7457a6c3b0543eb2182ec70/res/values-zh-rHK/values-zh-rHK.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

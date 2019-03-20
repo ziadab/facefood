@@ -4,7 +4,7 @@
             "outputFile": "/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/920270e48e7f8f7c22972a8e0645903e/res/values-v24/values-v24.xml",
+                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/0e74c1ef8c57fb3a4637dbacdfb6b27b/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/693d4c78b5d29f1f050623ff9532c8cd/res/values-v24/values-v24.xml",
+                    "source": "/home/zeus/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/082b73699dcb1540750a59e1516b1c5b/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

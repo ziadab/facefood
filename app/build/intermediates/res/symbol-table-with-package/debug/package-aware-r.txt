@@ -1062,6 +1062,9 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable i1
+drawable i2
+drawable i3
 drawable ic_action_stat_reply
 drawable ic_action_stat_share
 drawable ic_launcher_background
@@ -1098,7 +1101,6 @@ drawable tooltip_frame_light
 font roboto_medium
 id ALT
 id CTRL
-id DetailImg
 id FUNCTION
 id FrameFromMenu
 id META
@@ -1160,6 +1162,7 @@ id customPanel
 id dark
 id decor_content_parent
 id default_activity_button
+id descriptionFood
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1191,7 +1194,10 @@ id finish
 id firstName_layer
 id first_name
 id fixed
-id floatingActionButton
+id foodDescription
+id foodImage
+id foodName
+id foodPicture
 id forever
 id fragment_container
 id ghost_view
@@ -1327,14 +1333,12 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id textView2
 id textView3
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
 id textinput_helper_text
-id thla
 id time
 id title
 id titleDividerNoCustom
@@ -1411,6 +1415,7 @@ layout abc_tooltip
 layout activity_login
 layout activity_main
 layout activity_menu
+layout activity_random
 layout activity_signup
 layout activity_signup2
 layout activity_sorry_no_net
@@ -1429,8 +1434,6 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
-layout detail
-layout detail_fragment
 layout favorite_card
 layout food_card
 layout fragment_favorite
@@ -1561,6 +1564,7 @@ string register_now
 string search_menu_title
 string status_bar_notification_info_overflow
 string thlaText
+string title_activity_hmmm
 string title_activity_navigation_drawer
 string title_section1
 string title_section2
@@ -2069,6 +2073,8 @@ style Widget_MaterialComponents_TextInputLayout_OutlinedBox
 style Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense
 style Widget_MaterialComponents_Toolbar
 style Widget_Support_CoordinatorLayout
+style grr
+style hmm
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
