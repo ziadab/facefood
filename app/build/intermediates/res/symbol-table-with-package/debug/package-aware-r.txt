@@ -1067,6 +1067,7 @@ drawable i2
 drawable i3
 drawable ic_action_stat_reply
 drawable ic_action_stat_share
+drawable ic_arrow_back_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1206,6 +1207,7 @@ id group_divider
 id groups
 id header
 id hell
+id hmam
 id hmm
 id home
 id homeAsUp

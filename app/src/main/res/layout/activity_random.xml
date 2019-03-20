@@ -5,12 +5,13 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".random">
+        tools:context=".random"
+        android:fitsSystemWindows="true">
 
     <android.support.design.widget.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
     >
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -24,6 +25,7 @@
                 app:title="Thla"
         >
 
+
             <ImageView android:layout_width="match_parent"
                        android:layout_height="270sp"
                        android:src="@drawable/thla"
@@ -31,12 +33,17 @@
                        android:id="@+id/foodPicture"
 
             />
-            <android.support.v7.widget.Toolbar android:layout_width="match_parent"
-                                               android:layout_height="?attr/actionBarSize"
-                                               app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <android.support.v7.widget.Toolbar
+                    android:id="@+id/hmam"
+                    app:layout_collapseMode="pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark">
 
 
             </android.support.v7.widget.Toolbar>
+
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
