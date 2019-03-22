@@ -22,12 +22,12 @@
         />
     </group>
 
-    <item android:title="Parametre">
+    <item android:title="Who we are">
         <menu>
             <item
-                    android:title="Signout"
-                    android:id="@+id/logout"
-                    android:icon="@drawable/signout"
+                    android:title="About Us"
+                    android:id="@+id/about_us"
+                    android:icon="@drawable/ic_info_outline_black_24dp"
             />
         </menu>
     </item>

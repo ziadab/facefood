@@ -8,7 +8,6 @@ import android.os.Bundle
 import android.widget.Toast
 import com.abouelfarah.facefood.Menu
 import com.abouelfarah.facefood.R
-import com.abouelfarah.facefood.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_sorry_no_net.*
 
 class Sorry_no_net : AppCompatActivity() {

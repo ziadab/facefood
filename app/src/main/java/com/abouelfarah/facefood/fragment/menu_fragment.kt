@@ -3,7 +3,7 @@ package com.abouelfarah.facefood.fragment
 //import android.support.v7.widget.GridLayoutManager
 //import android.transition.Slide
 //import com.abouelfarah.facefood.detail
-//import kotlinx.android.synthetic.main.food_card.view.*
+//import kotlinx.android.synthetic.main.food_card_right.view.*
 import com.abouelfarah.facefood.models.foodTemp
 import android.content.Intent
 import android.os.Bundle
@@ -18,9 +18,10 @@ import com.squareup.picasso.Picasso
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
-import kotlinx.android.synthetic.main.food_card.view.*
+import kotlinx.android.synthetic.main.food_card_right.view.*
 import kotlinx.android.synthetic.main.fragment_menu.*
 import java.util.Random
+import maes.tech.intentanim.CustomIntent.customType
 
 class menu_fragment : Fragment() {
 
@@ -30,11 +31,12 @@ class menu_fragment : Fragment() {
         }
 
         val foodList  =ArrayList<foodTemp>()
-        foodList.add(foodTemp(R.drawable.i1, "Xi le3eba", R.string.thlaText))
-        foodList.add(foodTemp(R.drawable.i2, "Xi mane3erf", R.string.thlaText))
+        foodList.add(foodTemp(R.drawable.i1, "Like", R.string.thlaText))
+        foodList.add(foodTemp(R.drawable.i2, "Haha", R.string.thlaText))
         foodList.add(foodTemp(R.drawable.i3, "Grr", R.string.thlaText))
         foodList.add(foodTemp(R.drawable.steven_universe, "Steven Universe", R.string.thlaText))
         foodList.add(foodTemp(R.drawable.thla, "THLA", R.string.thlaText))
+        foodList.add(foodTemp(R.drawable.i4, "CJ", R.string.thlaText))
 
         var r = Random()
         for (i in 0..10) {
@@ -62,7 +64,7 @@ class menu_fragment : Fragment() {
 
 class menu_food(val food : foodTemp) : Item<ViewHolder>() {
     override fun getLayout(): Int {
-        return R.layout.food_card
+        return R.layout.food_card_right
     }
 
     override fun bind(viewHolder: ViewHolder, position: Int) {
@@ -75,6 +77,7 @@ class menu_food(val food : foodTemp) : Item<ViewHolder>() {
             val int = Intent(it.context, random::class.java)
             int.putExtra("wholeObject", food)
             startActivity(it.context, int, null)
+            //customType(it.context, "left-to-right")
         }
     }
 }

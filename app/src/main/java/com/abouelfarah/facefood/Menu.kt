@@ -1,77 +1,46 @@
 package com.abouelfarah.facefood
 
+//import android.content.Intent
 import android.content.Intent
+import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.NavigationView
+import android.support.v4.content.ContextCompat
 import android.support.v4.view.GravityCompat
 import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.widget.Toolbar
-import android.util.Log
 import android.view.Gravity
 import android.view.MenuItem
 import android.view.View
-import android.widget.LinearLayout
+import android.view.WindowManager
 import com.abouelfarah.facefood.fragment.favorite_fragment
 import com.abouelfarah.facefood.fragment.menu_fragment
 import com.abouelfarah.facefood.fragment.share_fragment
-import com.abouelfarah.facefood.login.LoginActivity
-import com.abouelfarah.facefood.models.User
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
-import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.nav_header.*
 
 class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     var drawer: DrawerLayout? = null
 
-    private fun updateUserUI() {
-        val uid = FirebaseAuth.getInstance().uid
-        val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
-        ref.addListenerForSingleValueEvent(object : ValueEventListener {
 
-            override fun onDataChange(p0: DataSnapshot) {
-                val user = p0.getValue(User::class.java)
-                Log.d("USERXXX", p0.toString())
-                if (user != null) {
-                    email_from_menu.text = user.email
-                    try {
-                        username_from_menu.text = "${user.firstName} ${user.lastName}"
-                        if (user.profileImg != null) {
-                            Picasso.get().load(user.profileImg).into(profile_img_from_menu)
-                        }
-                    } catch (ex: Exception) {
-                        username_from_menu.text =
-                            "${intent.getStringExtra("first_name")} ${intent.getStringExtra("last_name")}"
-                    }
-                }
-            }
-
-            override fun onCancelled(p0: DatabaseError) {
-            }
-        })
-    }
-
-    private fun verifyLogin() {
-        Log.d("VERIFYING", "IT4S DOING")
-        val uid = FirebaseAuth.getInstance().currentUser
-        //Log.d("VERIFYING", uid)
-        if (uid == null) {
-            val it = Intent(this, LoginActivity::class.java)
-            it.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
-            startActivity(it)
-        }
-    }
 
     override fun onBackPressed() {
         if (drawer!!.isDrawerOpen(GravityCompat.START)) {
             drawer!!.closeDrawer(GravityCompat.START)
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//                var windowsh = window
+//                windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+//                windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+//                windowsh.statusBarColor = ContextCompat.getColor(this, R.color.hmmm)
+//            }
         } else {
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//                var windowsh = window
+//                windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+//                windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+//                windowsh.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimaryDark)
+//            }
             super.onBackPressed()
         }
     }
@@ -91,15 +60,15 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         var navigationViewer: NavigationView = findViewById(R.id.nav_view)
 
         val headerview: View = navigationViewer.getHeaderView(0)
-        var header = headerview.findViewById<LinearLayout>(R.id.header)
+//        var header = headerview.findViewById<LinearLayout>(R.id.header)
 
-        header.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(v: View) {
-                val intss = Intent(this@Menu, update_img::class.java)
-                startActivity(intss)
-                drawer!!.closeDrawer(GravityCompat.START)
-            }
-        })
+//        header.setOnClickListener(object : View.OnClickListener {
+//            override fun onClick(v: View) {
+//                val intss = Intent(this@Menu, update_img::class.java)
+//                startActivity(intss)
+//                drawer!!.closeDrawer(GravityCompat.START)
+//            }
+//        })
 
         navigationViewer.setNavigationItemSelectedListener(this)
 //        navigationViewer.setCheckedItem(R.id.menuOfFood)
@@ -110,9 +79,38 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
             ActionBarDrawerToggle(this, drawer, tlb, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
 
         drawer!!.addDrawerListener(toogle)
+        drawer!!.addDrawerListener(object : DrawerLayout.DrawerListener {
+            override fun onDrawerStateChanged(p0: Int) {
+
+            }
+
+            override fun onDrawerSlide(p0: View, p1: Float) {
+            }
+
+            override fun onDrawerClosed(p0: View) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                var windowsh = window
+                windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                windowsh.statusBarColor = ContextCompat.getColor(p0.context, R.color.colorPrimaryDark)
+            }
+            }
+
+
+            override fun onDrawerOpened(p0: View) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                var windowsh = window
+                windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                windowsh.statusBarColor = ContextCompat.getColor(p0.context, R.color.hmmm)
+
+            }
+            }
+        })
         toogle.syncState()
 
-        updateUserUI()
+
+//        updateUserUI()
 
 //        profile_img_from_menu.setOnClickListener {
 //            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, update_img()).commit()
@@ -124,6 +122,14 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
     }
 
     override fun onNavigationItemSelected(p0: MenuItem): Boolean {
+
+        val windowsh = window
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+                windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+                windowsh.statusBarColor = ContextCompat.getColor(this, R.color.hmmm)
+            }
 
         when (p0.itemId) {
             // R.id.profile_img_from_menu -> supportFragmentManager.beginTransaction().replace(R.id.fragment_container, update_img()).commit()
@@ -139,14 +145,19 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
                 R.id.fragment_container,
                 share_fragment()
             ).commit()
-            R.id.logout -> {
-                FirebaseAuth.getInstance().signOut()
-                val int = Intent(this, LoginActivity::class.java)
-                int.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-                startActivity(int)
-            }
-        }
+            R.id.about_us ->startActivity(Intent(this, aboutUs::class.java))
 
+
+
+//                FirebaseAuth.getInstance().signOut()
+//                val int = Intent(this, LoginActivity::class.java)
+//                int.flags = Intent.FLAG_ACTIVITY_NEW_TASK.or(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+//                startActivity(int)
+
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            windowsh.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimaryDark)
+        }
         drawer!!.closeDrawer(Gravity.START)
         return true
     }

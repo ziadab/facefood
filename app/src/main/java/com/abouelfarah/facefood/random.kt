@@ -6,6 +6,7 @@ import android.support.v7.widget.Toolbar
 import com.abouelfarah.facefood.models.foodTemp
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_random.*
+import maes.tech.intentanim.CustomIntent
 
 class random : AppCompatActivity() {
 
@@ -20,6 +21,7 @@ class random : AppCompatActivity() {
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp)
         toolbar.setNavigationOnClickListener {
                 onBackPressed()
+                //CustomIntent.customType(it.context, "right-to-left")
         }
 
 

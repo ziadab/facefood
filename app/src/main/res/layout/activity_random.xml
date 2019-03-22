@@ -27,7 +27,7 @@
 
 
             <ImageView android:layout_width="match_parent"
-                       android:layout_height="270sp"
+                       android:layout_height="370sp"
                        android:src="@drawable/thla"
                        android:scaleType="centerCrop"
                        android:id="@+id/foodPicture"

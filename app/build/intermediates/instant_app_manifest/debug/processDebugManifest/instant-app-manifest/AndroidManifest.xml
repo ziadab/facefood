@@ -34,6 +34,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.abouelfarah.facefood.random"
@@ -42,15 +43,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.abouelfarah.facefood.Menu" />
         </activity>
-        <activity android:name="com.abouelfarah.facefood.update_img" >
+        <activity android:name="com.abouelfarah.facefood.aboutUs" >
         </activity>
         <activity android:name="com.abouelfarah.facefood.Menu" >
-        </activity>
-        <activity android:name="com.abouelfarah.facefood.Signup.Signup2" >
-        </activity>
-        <activity android:name="com.abouelfarah.facefood.Signup.Signup" >
-        </activity>
-        <activity android:name="com.abouelfarah.facefood.login.LoginActivity" >
         </activity>
         <activity android:name="com.abouelfarah.facefood.no_net.Sorry_no_net" >
         </activity>

@@ -19,16 +19,11 @@
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value="com.abouelfarah.facefood.Menu"/>
         </activity>
-        <activity android:name=".update_img">
+        <activity android:name=".aboutUs">
         </activity>
         <activity android:name=".Menu">
         </activity>
-        <activity android:name=".Signup.Signup2">
-        </activity>
-        <activity android:name=".Signup.Signup">
-        </activity>
-        <activity android:name=".login.LoginActivity">
-        </activity>
+
         <activity android:name=".no_net.Sorry_no_net">
         </activity>
         <activity android:name=".no_net.MainActivity">
