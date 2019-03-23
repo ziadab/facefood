@@ -1,4 +1,4 @@
-#Fri Mar 22 16:38:40 WET 2019
+#Sat Mar 23 21:10:06 WET 2019
 base.0=/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex

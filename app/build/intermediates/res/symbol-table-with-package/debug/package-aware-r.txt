@@ -1094,6 +1094,8 @@ drawable steven_universe
 drawable thla
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font crete_round_italic
+font lato_bold
 font roboto_medium
 id ALT
 id CTRL
@@ -1401,8 +1403,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
-layout food_card_left
-layout food_card_right
+layout food_card
 layout fragment_about_us
 layout fragment_favorite
 layout fragment_menu

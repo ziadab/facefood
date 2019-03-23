@@ -3,7 +3,7 @@ package com.abouelfarah.facefood.fragment
 //import android.support.v7.widget.GridLayoutManager
 //import android.transition.Slide
 //import com.abouelfarah.facefood.detail
-//import kotlinx.android.synthetic.main.food_card_right.view.*
+//import kotlinx.android.synthetic.main.food_card.view.*
 import com.abouelfarah.facefood.models.foodTemp
 import android.content.Intent
 import android.os.Bundle
@@ -18,10 +18,9 @@ import com.squareup.picasso.Picasso
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
-import kotlinx.android.synthetic.main.food_card_right.view.*
+import kotlinx.android.synthetic.main.food_card.view.*
 import kotlinx.android.synthetic.main.fragment_menu.*
 import java.util.Random
-import maes.tech.intentanim.CustomIntent.customType
 
 class menu_fragment : Fragment() {
 
@@ -64,12 +63,12 @@ class menu_fragment : Fragment() {
 
 class menu_food(val food : foodTemp) : Item<ViewHolder>() {
     override fun getLayout(): Int {
-        return R.layout.food_card_right
+        return R.layout.food_card
     }
 
     override fun bind(viewHolder: ViewHolder, position: Int) {
         Picasso.get().load(food.foodImage).into(viewHolder.itemView.foodImage)
-        viewHolder.itemView.foodName.setText(food.foodName)
+        viewHolder.itemView.foodName.setText(food.foodName.toUpperCase())
         viewHolder.itemView.descriptionFood.setText(food.foodDescription)
 
 
