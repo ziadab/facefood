@@ -65,34 +65,34 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
             ActionBarDrawerToggle(this, drawer, tlb, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
 
         drawer!!.addDrawerListener(toogle)
-        drawer!!.addDrawerListener(object : DrawerLayout.DrawerListener {
-            override fun onDrawerStateChanged(p0: Int) {
-
-            }
-
-            override fun onDrawerSlide(p0: View, p1: Float) {
-            }
-
-            override fun onDrawerClosed(p0: View) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                val windowsh = window
-                windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-                windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-                windowsh.statusBarColor = ContextCompat.getColor(p0.context, R.color.colorPrimaryDark)
-            }
-            }
-
-
-            override fun onDrawerOpened(p0: View) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                val windowsh = window
-                windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-                windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-                windowsh.statusBarColor = ContextCompat.getColor(p0.context, R.color.hmmm)
-
-            }
-            }
-        })
+//        drawer!!.addDrawerListener(object : DrawerLayout.DrawerListener {
+//            override fun onDrawerStateChanged(p0: Int) {
+//
+//            }
+//
+//            override fun onDrawerSlide(p0: View, p1: Float) {
+//            }
+//
+//            override fun onDrawerClosed(p0: View) {
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//                val windowsh = window
+//                windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+//                windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+//                windowsh.statusBarColor = ContextCompat.getColor(p0.context, R.color.colorPrimaryDark)
+//            }
+//            }
+//
+//
+//            override fun onDrawerOpened(p0: View) {
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//                val windowsh = window
+//                windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+//                windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+//                windowsh.statusBarColor = ContextCompat.getColor(p0.context, R.color.hmmm)
+//
+//            }
+//            }
+//        })
         toogle.syncState()
 
 
