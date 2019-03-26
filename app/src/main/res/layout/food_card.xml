@@ -8,6 +8,7 @@
         app:cardElevation="8dp"
         app:cardCornerRadius="20dp"
         android:layout_margin="8dp"
+        android:padding="8dp"
         android:transitionName="foodCard"
         >
 
@@ -20,7 +21,7 @@
         <ImageView
                 android:id="@+id/foodImage"
                 android:layout_width="match_parent"
-                android:layout_height="200sp"
+                android:layout_height="175sp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/steven_universe"
         />
@@ -36,9 +37,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Steven Universe"
-                    android:textSize="25sp"
                     android:layout_marginBottom="8dp"
-                    android:textColor="#000" android:fontFamily="@font/lato_bold"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="#5F5F5F"
+                    android:textSize="17sp"
                     android:typeface="sans"/>
 
             <TextView
@@ -50,7 +52,8 @@
                     android:text="@string/thlaText"
                     android:textColor="#555"
                     android:layout_marginBottom="8dp"
-                    android:fontFamily="@font/crete_round_italic" android:textStyle="italic" android:textSize="17sp"/>
+                    android:textSize="13sp"
+                    android:fontFamily="@font/roboto"/>
 
         </LinearLayout>
 

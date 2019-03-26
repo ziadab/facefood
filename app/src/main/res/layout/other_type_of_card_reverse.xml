@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:id="@+id/StevenCard3"
+>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+
+
+        <LinearLayout
+                android:layout_weight=".6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+        >
+
+
+            <TextView
+                    android:id="@+id/foodName3"
+                    android:text="GRRR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="17sp"
+            />
+
+            <TextView
+                    android:id="@+id/descriptionFood3"
+                    android:maxLines="5"
+                    android:ellipsize="end"
+                    android:text="@string/thlaText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#555"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/roboto"
+            />
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/foodImage3"
+                android:layout_width="0dp"
+                android:layout_weight=".30"
+                android:layout_height="150dp"
+                android:src="@drawable/thla"
+                android:scaleType="centerCrop"
+        />
+
+    </LinearLayout>
+
+
+</android.support.design.card.MaterialCardView>

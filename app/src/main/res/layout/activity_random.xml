@@ -22,8 +22,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:contentScrim="@color/colorPrimaryDark"
-                app:title="Thla"
-        >
+                app:title="Thla">
 
 
             <ImageView android:layout_width="match_parent"
@@ -61,6 +60,7 @@
                 android:textSize="19sp"
                 android:lineSpacingExtra="8sp"
                 android:padding="16dp"
+                android:fontFamily="@font/roboto"
         />
 
     </android.support.v4.widget.NestedScrollView>

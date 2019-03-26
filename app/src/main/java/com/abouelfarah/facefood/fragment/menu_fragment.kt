@@ -18,8 +18,9 @@ import com.squareup.picasso.Picasso
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.Item
 import com.xwray.groupie.ViewHolder
-import kotlinx.android.synthetic.main.food_card.view.*
 import kotlinx.android.synthetic.main.fragment_menu.*
+import kotlinx.android.synthetic.main.other_type_of_card.view.*
+import kotlinx.android.synthetic.main.other_type_of_card_reverse.view.*
 import java.util.Random
 
 class menu_fragment : Fragment() {
@@ -38,10 +39,15 @@ class menu_fragment : Fragment() {
         foodList.add(foodTemp(R.drawable.i4, "CJ", R.string.thlaText))
 
         var r = Random()
-        for (i in 0..10) {
-            val randomX = r.nextInt(foodList.size)
+        for (i in 0..5) {
+            var randomX = r.nextInt(foodList.size)
             val obj:foodTemp = foodList[randomX]
             adapters.add(menu_food(obj))
+
+            randomX = r.nextInt(foodList.size)
+            val hmm:foodTemp = foodList[randomX]
+            adapters.add(menu_food_reverse(hmm))
+
         }
         recyclerViewer_from_fragment_menu.adapter = adapters
 
@@ -63,16 +69,36 @@ class menu_fragment : Fragment() {
 
 class menu_food(val food : foodTemp) : Item<ViewHolder>() {
     override fun getLayout(): Int {
-        return R.layout.food_card
+        return R.layout.other_type_of_card
     }
 
     override fun bind(viewHolder: ViewHolder, position: Int) {
-        Picasso.get().load(food.foodImage).into(viewHolder.itemView.foodImage)
-        viewHolder.itemView.foodName.setText(food.foodName.toUpperCase())
-        viewHolder.itemView.descriptionFood.setText(food.foodDescription)
+        Picasso.get().load(food.foodImage).into(viewHolder.itemView.foodImage2)
+        viewHolder.itemView.foodName2.setText(food.foodName.toUpperCase())
+        viewHolder.itemView.descriptionFood2.setText(food.foodDescription)
 
 
-        viewHolder.itemView.StevenCard.setOnClickListener {
+        viewHolder.itemView.StevenCard2.setOnClickListener {
+            val int = Intent(it.context, random::class.java)
+            int.putExtra("wholeObject", food)
+            startActivity(it.context, int, null)
+            //customType(it.context, "left-to-right")
+        }
+    }
+}
+
+class menu_food_reverse(val food : foodTemp) : Item<ViewHolder>() {
+    override fun getLayout(): Int {
+        return R.layout.other_type_of_card_reverse
+    }
+
+    override fun bind(viewHolder: ViewHolder, position: Int) {
+        Picasso.get().load(food.foodImage).into(viewHolder.itemView.foodImage3)
+        viewHolder.itemView.foodName3.setText(food.foodName.toUpperCase())
+        viewHolder.itemView.descriptionFood3.setText(food.foodDescription)
+
+
+        viewHolder.itemView.StevenCard3.setOnClickListener {
             val int = Intent(it.context, random::class.java)
             int.putExtra("wholeObject", food)
             startActivity(it.context, int, null)

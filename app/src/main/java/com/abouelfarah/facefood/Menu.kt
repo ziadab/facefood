@@ -1,6 +1,5 @@
 package com.abouelfarah.facefood
 
-//import android.content.Intent
 import android.content.Intent
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
@@ -28,19 +27,7 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
     override fun onBackPressed() {
         if (drawer!!.isDrawerOpen(GravityCompat.START)) {
             drawer!!.closeDrawer(GravityCompat.START)
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//                var windowsh = window
-//                windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-//                windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-//                windowsh.statusBarColor = ContextCompat.getColor(this, R.color.hmmm)
-//            }
         } else {
-//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//                var windowsh = window
-//                windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-//                windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-//                windowsh.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimaryDark)
-//            }
             super.onBackPressed()
         }
     }
@@ -57,10 +44,9 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
         drawer = findViewById(R.id.drawer_layer)
 
-        var navigationViewer: NavigationView = findViewById(R.id.nav_view)
+        val navigationViewer: NavigationView = findViewById(R.id.nav_view)
 
-        val headerview: View = navigationViewer.getHeaderView(0)
-//        var header = headerview.findViewById<LinearLayout>(R.id.header)
+//        val headerview: View = navigationViewer.getHeaderView(0)
 
 //        header.setOnClickListener(object : View.OnClickListener {
 //            override fun onClick(v: View) {
@@ -89,7 +75,7 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
             override fun onDrawerClosed(p0: View) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                var windowsh = window
+                val windowsh = window
                 windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
                 windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
                 windowsh.statusBarColor = ContextCompat.getColor(p0.context, R.color.colorPrimaryDark)
@@ -99,7 +85,7 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
 
             override fun onDrawerOpened(p0: View) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                var windowsh = window
+                val windowsh = window
                 windowsh.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
                 windowsh.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
                 windowsh.statusBarColor = ContextCompat.getColor(p0.context, R.color.hmmm)
