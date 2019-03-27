@@ -6,9 +6,37 @@ import android.support.v7.widget.Toolbar
 import com.abouelfarah.facefood.models.foodTemp
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_random.*
-import maes.tech.intentanim.CustomIntent
+
+
 
 class random : AppCompatActivity() {
+
+    /*fun thla(){
+
+        val appBarLayout = findViewById(R.id.app_bar_layout) as AppBarLayout
+        appBarLayout.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { appBarLayout, offset ->
+            val upArrow = ResourcesCompat.getDrawable(resources, R.drawable.drawer_icon, null)
+            if (offset < -200) {
+                upArrow!!.setColorFilter(Color.parseColor("#000000"), PorterDuff.Mode.SRC_ATOP)
+                supportActionBar!!.setHomeAsUpIndicator(upArrow)
+
+                val drawable = ContextCompat.getDrawable(applicationContext, R.drawable.option_menu_icon)
+                drawable!!.setColorFilter(Color.parseColor("#000000"), PorterDuff.Mode.SRC_ATOP)
+                toolbar.setOverflowIcon(drawable)
+            } else {
+
+                upArrow!!.setColorFilter(Color.parseColor("#ffffff"), PorterDuff.Mode.SRC_ATOP)
+                supportActionBar!!.setHomeAsUpIndicator(upArrow)
+                supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
+                val drawable = ContextCompat.getDrawable(applicationContext, R.drawable.option_menu_icon)
+                drawable!!.setColorFilter(Color.parseColor("#ffffff"), PorterDuff.Mode.SRC_ATOP)
+                toolbar.setOverflowIcon(drawable)
+            }
+        })
+
+
+    }*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -12,11 +12,12 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.widget.Toolbar
 import android.view.Gravity
 import android.view.MenuItem
-import android.view.View
 import android.view.WindowManager
 import com.abouelfarah.facefood.fragment.favorite_fragment
 import com.abouelfarah.facefood.fragment.menu_fragment
 import com.abouelfarah.facefood.fragment.share_fragment
+
+
 
 class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 

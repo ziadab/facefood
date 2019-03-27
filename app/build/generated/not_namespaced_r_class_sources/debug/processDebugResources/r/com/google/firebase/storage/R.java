@@ -14,19 +14,19 @@ public final class R {
 
         public static final int buttonSize = 0x7f040056;
         public static final int circleCrop = 0x7f04007b;
-        public static final int colorScheme = 0x7f040096;
-        public static final int font = 0x7f0400de;
-        public static final int fontProviderAuthority = 0x7f0400e0;
-        public static final int fontProviderCerts = 0x7f0400e1;
-        public static final int fontProviderFetchStrategy = 0x7f0400e2;
-        public static final int fontProviderFetchTimeout = 0x7f0400e3;
-        public static final int fontProviderPackage = 0x7f0400e4;
-        public static final int fontProviderQuery = 0x7f0400e5;
-        public static final int fontStyle = 0x7f0400e6;
-        public static final int fontWeight = 0x7f0400e8;
-        public static final int imageAspectRatio = 0x7f040103;
-        public static final int imageAspectRatioAdjust = 0x7f040104;
-        public static final int scopeUris = 0x7f040190;
+        public static final int colorScheme = 0x7f040092;
+        public static final int font = 0x7f0400da;
+        public static final int fontProviderAuthority = 0x7f0400dc;
+        public static final int fontProviderCerts = 0x7f0400dd;
+        public static final int fontProviderFetchStrategy = 0x7f0400de;
+        public static final int fontProviderFetchTimeout = 0x7f0400df;
+        public static final int fontProviderPackage = 0x7f0400e0;
+        public static final int fontProviderQuery = 0x7f0400e1;
+        public static final int fontStyle = 0x7f0400e2;
+        public static final int fontWeight = 0x7f0400e4;
+        public static final int imageAspectRatio = 0x7f0400ff;
+        public static final int imageAspectRatioAdjust = 0x7f040100;
+        public static final int scopeUris = 0x7f04018c;
     }
     public static final class bool {
         private bool() {}
@@ -227,14 +227,14 @@ public final class R {
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] FontFamily = { 0x7f0400e0, 0x7f0400e1, 0x7f0400e2, 0x7f0400e3, 0x7f0400e4, 0x7f0400e5 };
+        public static final int[] FontFamily = { 0x7f0400dc, 0x7f0400dd, 0x7f0400de, 0x7f0400df, 0x7f0400e0, 0x7f0400e1 };
         public static final int FontFamily_fontProviderAuthority = 0;
         public static final int FontFamily_fontProviderCerts = 1;
         public static final int FontFamily_fontProviderFetchStrategy = 2;
         public static final int FontFamily_fontProviderFetchTimeout = 3;
         public static final int FontFamily_fontProviderPackage = 4;
         public static final int FontFamily_fontProviderQuery = 5;
-        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f0400de, 0x7f0400e6, 0x7f0400e7, 0x7f0400e8, 0x7f040212 };
+        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f0400da, 0x7f0400e2, 0x7f0400e3, 0x7f0400e4, 0x7f04020e };
         public static final int FontFamilyFont_android_font = 0;
         public static final int FontFamilyFont_android_fontWeight = 1;
         public static final int FontFamilyFont_android_fontStyle = 2;
@@ -245,11 +245,11 @@ public final class R {
         public static final int FontFamilyFont_fontVariationSettings = 7;
         public static final int FontFamilyFont_fontWeight = 8;
         public static final int FontFamilyFont_ttcIndex = 9;
-        public static final int[] LoadingImageView = { 0x7f04007b, 0x7f040103, 0x7f040104 };
+        public static final int[] LoadingImageView = { 0x7f04007b, 0x7f0400ff, 0x7f040100 };
         public static final int LoadingImageView_circleCrop = 0;
         public static final int LoadingImageView_imageAspectRatio = 1;
         public static final int LoadingImageView_imageAspectRatioAdjust = 2;
-        public static final int[] SignInButton = { 0x7f040056, 0x7f040096, 0x7f040190 };
+        public static final int[] SignInButton = { 0x7f040056, 0x7f040092, 0x7f04018c };
         public static final int SignInButton_buttonSize = 0;
         public static final int SignInButton_colorScheme = 1;
         public static final int SignInButton_scopeUris = 2;
