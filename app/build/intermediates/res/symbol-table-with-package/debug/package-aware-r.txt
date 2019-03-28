@@ -1261,6 +1261,7 @@ id progress_horizontal
 id radio
 id recyclerViewer_from_favorite_fragment
 id recyclerViewer_from_fragment_menu
+id recyclerViewer_from_suggestion_fragment
 id right
 id right_icon
 id right_side
@@ -1310,6 +1311,8 @@ id stretch
 id submenuarrow
 id submit_area
 id subtext
+id suggester_name
+id suggestion_idea
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -1419,7 +1422,7 @@ layout food_card
 layout fragment_about_us
 layout fragment_favorite
 layout fragment_menu
-layout fragment_share
+layout fragment_suggestion
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout nav_header
@@ -1443,6 +1446,7 @@ layout other_type_of_card_reverse
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout suggest_card
 layout support_simple_spinner_dropdown_item
 menu drawer_menu
 mipmap ic_launcher

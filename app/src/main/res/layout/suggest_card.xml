@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="8dp"
+        app:contentPadding="8sp"
+        app:strokeColor="#d3d3d3"
+        app:strokeWidth="1dp"
+
+>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="vertical"
+    >
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        >
+
+            <TextView
+                    android:id="@+id/suggester_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anonym :"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto"
+                    android:textColor="#000"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/suggestion_idea"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:ellipsize="end"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thlaText"
+                android:textSize="14dp"
+                android:fontFamily="@font/roboto"
+
+        />
+
+
+    </LinearLayout>
+
+</android.support.design.card.MaterialCardView>

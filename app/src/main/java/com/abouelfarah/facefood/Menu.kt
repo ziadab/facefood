@@ -15,7 +15,7 @@ import android.view.MenuItem
 import android.view.WindowManager
 import com.abouelfarah.facefood.fragment.favorite_fragment
 import com.abouelfarah.facefood.fragment.menu_fragment
-import com.abouelfarah.facefood.fragment.share_fragment
+import com.abouelfarah.facefood.fragment.suggestion_fragment
 
 
 
@@ -130,7 +130,7 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
             ).commit()
             R.id.shared_picture -> supportFragmentManager.beginTransaction().replace(
                 R.id.fragment_container,
-                share_fragment()
+                suggestion_fragment()
             ).commit()
             R.id.about_us ->startActivity(Intent(this, aboutUs::class.java))
 

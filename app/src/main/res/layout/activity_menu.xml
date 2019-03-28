@@ -25,7 +25,6 @@
                 android:theme="@style/toolbar"
                 android:id="@+id/toolbar"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                android:elevation="16dp"
         />
 
         <FrameLayout

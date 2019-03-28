@@ -16,7 +16,7 @@
                 android:id="@+id/specialOffer"
         />
         <item
-                android:title="Share"
+                android:title="Suggestion"
                 android:icon="@drawable/img_shared"
                 android:id="@+id/shared_picture"
         />
