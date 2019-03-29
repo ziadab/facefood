@@ -1095,9 +1095,6 @@ drawable steven_universe
 drawable thla
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
-font block_berthold_condensed_regular
-font crete_round_italic
-font lato_bold
 font roboto
 font roboto_bold
 font roboto_medium
@@ -1147,6 +1144,7 @@ id bottom
 id button
 id buttonPanel
 id cancel_action
+id cancel_button
 id center
 id center_horizontal
 id center_vertical
@@ -1214,6 +1212,7 @@ id homeAsUp
 id icon
 id icon_group
 id icon_only
+id idea_from_add_suggestion
 id ifRoom
 id image
 id imageView
@@ -1238,6 +1237,7 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id name_from_add_suggestion
 id nav_view
 id navigation_header_container
 id never
@@ -1255,6 +1255,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id post_button
 id profile_img_from_menu
 id progress_circular
 id progress_horizontal
@@ -1404,6 +1405,7 @@ layout activity_main
 layout activity_menu
 layout activity_random
 layout activity_sorry_no_net
+layout add_suggestion
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
