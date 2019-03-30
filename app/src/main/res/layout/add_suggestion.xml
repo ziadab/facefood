@@ -20,6 +20,7 @@
     >
 
         <EditText
+                android:inputType="textPersonName"
                 android:id="@+id/name_from_add_suggestion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -32,6 +33,7 @@
 
         <EditText
                 android:id="@+id/idea_from_add_suggestion"
+                android:inputType="text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"
