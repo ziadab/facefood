@@ -13,7 +13,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".random"
+        <activity android:name=".pushTheFood">
+        </activity>
+        <activity
+                android:name=".random"
                 android:parentActivityName=".Menu">
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
@@ -23,7 +26,6 @@
         </activity>
         <activity android:name=".Menu">
         </activity>
-
         <activity android:name=".no_net.Sorry_no_net">
         </activity>
         <activity android:name=".no_net.MainActivity">
@@ -33,7 +35,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
     </application>
 
 </manifest>

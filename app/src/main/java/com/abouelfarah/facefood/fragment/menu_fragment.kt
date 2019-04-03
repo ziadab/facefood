@@ -32,6 +32,12 @@ import java.util.Random
 
 class menu_fragment : Fragment() {
 
+    private fun pushToTheMenu(){
+
+
+
+    }
+
     private fun giveMeMyMenu(){
 
         val ref = FirebaseDatabase.getInstance().getReference("/menu")
