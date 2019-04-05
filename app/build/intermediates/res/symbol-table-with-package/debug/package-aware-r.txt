@@ -1216,6 +1216,7 @@ id idea_from_add_suggestion
 id ifRoom
 id image
 id imageView
+id imageView2
 id info
 id invisible
 id italic
@@ -1403,6 +1404,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_menu
+layout activity_push_the_food
 layout activity_random
 layout activity_sorry_no_net
 layout add_suggestion
