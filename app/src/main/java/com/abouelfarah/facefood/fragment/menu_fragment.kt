@@ -4,6 +4,7 @@ package com.abouelfarah.facefood.fragment
 //import android.transition.Slide
 //import com.abouelfarah.facefood.detail
 //import kotlinx.android.synthetic.main.food_card.view.*
+import android.content.Intent
 import com.abouelfarah.facefood.models.foodTemp
 import android.os.Build
 import android.os.Bundle
@@ -20,6 +21,7 @@ import com.abouelfarah.facefood.cards.reversed_card
 import com.abouelfarah.facefood.makla
 import com.abouelfarah.facefood.menu_food_reverse
 import com.abouelfarah.facefood.models.food
+import com.abouelfarah.facefood.pushTheFood
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -32,11 +34,10 @@ import java.util.Random
 
 class menu_fragment : Fragment() {
 
-    private fun pushToTheMenu(){
-
-
-
+    companion object {
+        val adapter = GroupAdapter<ViewHolder>()
     }
+
 
     private fun giveMeMyMenu(){
 
@@ -45,7 +46,6 @@ class menu_fragment : Fragment() {
 
             override fun onDataChange(p0: DataSnapshot) {
 
-                val adapter = GroupAdapter<ViewHolder>()
                 var i:Int = 0
 
 
@@ -74,6 +74,7 @@ class menu_fragment : Fragment() {
 
         })
 
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -81,9 +82,9 @@ class menu_fragment : Fragment() {
         val tlb: Toolbar = activity!!.findViewById(R.id.toolbar)
 
 
-        val adapters = GroupAdapter<ViewHolder>().apply {
+        /*val adapters = GroupAdapter<ViewHolder>().apply {
             spanCount = 3
-        }
+        }*/
 
         val foodList  =ArrayList<foodTemp>()
         foodList.add(foodTemp(R.drawable.i1, "Like", R.string.thlaText))
@@ -97,14 +98,16 @@ class menu_fragment : Fragment() {
         for (i in 0..5) {
             var randomX = r.nextInt(foodList.size)
             val obj:foodTemp = foodList[randomX]
-            adapters.add(makla(obj))
+            adapter.add(makla(obj))
 
             randomX = r.nextInt(foodList.size)
             val hmm:foodTemp = foodList[randomX]
-            adapters.add(menu_food_reverse(hmm))
+            adapter.add(menu_food_reverse(hmm))
 
         }
-        recyclerViewer_from_fragment_menu.adapter = adapters
+
+        giveMeMyMenu()
+        recyclerViewer_from_fragment_menu.adapter = adapter
 
         recyclerViewer_from_fragment_menu.addOnScrollListener(object : RecyclerView.OnScrollListener(){
             @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
@@ -124,6 +127,12 @@ class menu_fragment : Fragment() {
 
             }
         })
+
+        add_to_menu.setOnClickListener {
+            val int = Intent(it.context, pushTheFood::class.java)
+            int.putExtra("where", "menu")
+            startActivity(int)
+        }
 
     }
 

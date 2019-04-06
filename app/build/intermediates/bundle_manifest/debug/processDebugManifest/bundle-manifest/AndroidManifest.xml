@@ -34,7 +34,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.abouelfarah.facefood.pushTheFood" >
+        <activity
+            android:name="com.abouelfarah.facefood.pushTheFood"
+            android:parentActivityName="com.abouelfarah.facefood.Menu" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.abouelfarah.facefood.Menu" />
         </activity>
         <activity
             android:name="com.abouelfarah.facefood.random"

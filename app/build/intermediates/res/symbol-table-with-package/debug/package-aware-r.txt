@@ -165,6 +165,10 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr circleCrop
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -1130,6 +1134,8 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_to_favorite
+id add_to_menu
 id adjust_height
 id adjust_width
 id alertTitle
@@ -1143,6 +1149,7 @@ id blocking
 id bottom
 id button
 id buttonPanel
+id cancelFood
 id cancel_action
 id cancel_button
 id center
@@ -1166,6 +1173,7 @@ id default_activity_button
 id descriptionFood
 id descriptionFood2
 id descriptionFood3
+id descriptionToPost
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1194,6 +1202,7 @@ id foodDescription
 id foodImage
 id foodImage2
 id foodImage3
+id foodImageToPost
 id foodName
 id foodName2
 id foodName3
@@ -1216,7 +1225,6 @@ id idea_from_add_suggestion
 id ifRoom
 id image
 id imageView
-id imageView2
 id info
 id invisible
 id italic
@@ -1230,6 +1238,7 @@ id line3
 id listMode
 id list_item
 id masked
+id materialCardView
 id media_actions
 id menuOfFood
 id message
@@ -1238,6 +1247,7 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id nameToPost
 id name_from_add_suggestion
 id nav_view
 id navigation_header_container
@@ -1256,6 +1266,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id postTheFood
 id post_button
 id profile_img_from_menu
 id progress_circular
@@ -1526,7 +1537,6 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
-string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string large_text
 string mtrl_chip_close_icon_content_description
@@ -1539,6 +1549,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
 string search_menu_title
+string select_food
 string status_bar_notification_info_overflow
 string thlaText
 string try_again
@@ -2048,6 +2059,7 @@ style grr
 style hmm
 style statusBarChanger
 style toolbar
+style toolbar2
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -2073,6 +2085,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipStartPadding chipStrokeColor chipStrokeWidth closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible hideMotionSpec iconEndPadding iconStartPadding rippleColor showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

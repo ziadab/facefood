@@ -23,5 +23,12 @@
     </style>
 
 
+    <style name="toolbar2" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionMenuTextColor">#fff</item>
+        <item name="android:textColorPrimary">#fff</item>
+
+    </style>
+
+
 
 </resources>

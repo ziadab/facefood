@@ -1,6 +1,7 @@
 package com.abouelfarah.facefood.fragment
 
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.support.annotation.RequiresApi
@@ -17,6 +18,7 @@ import com.abouelfarah.facefood.cards.reversed_card
 import com.abouelfarah.facefood.makla
 import com.abouelfarah.facefood.models.food
 import com.abouelfarah.facefood.models.foodTemp
+import com.abouelfarah.facefood.pushTheFood
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -29,6 +31,10 @@ import java.util.Random
 
 class favorite_fragment: Fragment() {
 
+    companion object {
+        val adapter = GroupAdapter<ViewHolder>()
+    }
+
     private fun giveMeMySpecialOffer(){
 
         val ref = FirebaseDatabase.getInstance().getReference("/special_offer")
@@ -36,7 +42,6 @@ class favorite_fragment: Fragment() {
 
             override fun onDataChange(p0: DataSnapshot) {
 
-                val adapter = GroupAdapter<ViewHolder>()
                 var i:Int = 0
 
                 p0.children.forEach {
@@ -69,7 +74,6 @@ class favorite_fragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-        val adapters = GroupAdapter<ViewHolder>()
         val tlb:Toolbar= activity!!.findViewById(R.id.toolbar)
 
 
@@ -86,15 +90,17 @@ class favorite_fragment: Fragment() {
         for (i in 0..5) {
             var randomX = r.nextInt(foodList.size)
             val obj:foodTemp = foodList[randomX]
-            adapters.add(makla(obj))
+            adapter.add(makla(obj))
 
             randomX = r.nextInt(foodList.size)
             val hmm:foodTemp = foodList[randomX]
-            adapters.add(menu_food_reverse(hmm))
+            adapter.add(menu_food_reverse(hmm))
 
         }
 
-        recyclerViewer_from_favorite_fragment.adapter = adapters
+        giveMeMySpecialOffer()
+
+        recyclerViewer_from_favorite_fragment.adapter = adapter
 
         recyclerViewer_from_favorite_fragment.addOnScrollListener(object : RecyclerView.OnScrollListener(){
             @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
@@ -114,6 +120,12 @@ class favorite_fragment: Fragment() {
 
             }
         })
+
+        add_to_favorite.setOnClickListener {
+            val int = Intent(it.context, pushTheFood::class.java)
+            int.putExtra("where", "special_offer")
+            startActivity(int)
+        }
 
 
     }
