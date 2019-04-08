@@ -5,9 +5,13 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import com.abouelfarah.facefood.models.food
+import com.google.android.gms.tasks.Continuation
+import com.google.android.gms.tasks.Task
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.UploadTask
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_push_the_food.*
 import java.util.UUID
@@ -49,10 +53,28 @@ class pushTheFood : AppCompatActivity() {
 
         val fileName = UUID.randomUUID().toString()
         val ref = FirebaseStorage.getInstance().getReference("/images/$fileName")
-        ref.putFile(selectedPhotoUri!!)
-        ref.downloadUrl.addOnCompleteListener {
-            saveFoodInDatabase(it.toString(), direction)
+        val uploadTask = ref.putFile(selectedPhotoUri!!)
+
+        val urlTask = uploadTask.continueWithTask(Continuation<UploadTask.TaskSnapshot, Task<Uri>> { task ->
+            if (!task.isSuccessful) {
+                task.exception?.let {
+                    throw it
+                }
+            }
+            return@Continuation ref.downloadUrl
+        }).addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                val downloadUri = task.result.toString()
+                Log.d("download", downloadUri)
+                saveFoodInDatabase(downloadUri, direction)
+            } else {
+                // Handle failures
+                // ...
+            }
         }
+
+
+
     }
 
     private fun saveFoodInDatabase(imgLocation:String, direction:String){
