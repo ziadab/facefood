@@ -17,7 +17,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.abouelfarah.facefood.R
 import com.abouelfarah.facefood.cards.normal_card
+import com.abouelfarah.facefood.cards.normal_card_real
 import com.abouelfarah.facefood.cards.reversed_card
+import com.abouelfarah.facefood.cards.reversed_card_real
 import com.abouelfarah.facefood.makla
 import com.abouelfarah.facefood.menu_food_reverse
 import com.abouelfarah.facefood.models.food
@@ -53,12 +55,12 @@ class menu_fragment : Fragment() {
                     if (i % 2 == 0){
                         val food = it.getValue(food::class.java)
                         if (food != null){
-                            adapter.add(normal_card(food))
+                            adapter.add(normal_card_real(food))
                         }
                     }else{
                         val food = it.getValue(food::class.java)
                         if (food != null){
-                            adapter.add(reversed_card(food))
+                            adapter.add(reversed_card_real(food))
                         }
                     }
                     i += 1
@@ -128,11 +130,13 @@ class menu_fragment : Fragment() {
             }
         })
 
-        add_to_menu.setOnClickListener {
+        // TODO This is for admin part
+/*        add_to_menu.setOnClickListener {
             val int = Intent(it.context, pushTheFood::class.java)
             int.putExtra("where", "menu")
             startActivity(int)
-        }
+        }*/
+
 
     }
 

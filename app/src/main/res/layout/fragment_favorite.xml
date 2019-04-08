@@ -11,7 +11,8 @@
 
         android:paddingStart="8dp">
 
-    <android.support.design.widget.FloatingActionButton
+   <!-- TODO This for Admin
+   <android.support.design.widget.FloatingActionButton
             android:id="@+id/add_to_favorite"
             app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
             android:tint="#fff"
@@ -22,7 +23,7 @@
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
             app:layout_constraintHorizontal_bias="0.953"
-            app:layout_constraintVertical_bias="0.965"/>
+            app:layout_constraintVertical_bias="0.965"/> -->
 
 
     <android.support.v7.widget.RecyclerView
