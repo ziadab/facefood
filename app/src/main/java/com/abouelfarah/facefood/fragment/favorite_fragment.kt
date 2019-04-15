@@ -123,14 +123,12 @@ class favorite_fragment: Fragment() {
             }
         })
 
-/*
         // TODO This is for admin part
         add_to_favorite.setOnClickListener {
             val int = Intent(it.context, pushTheFood::class.java)
             int.putExtra("where", "special_offer")
             startActivity(int)
         }
-*/
 
 
     }

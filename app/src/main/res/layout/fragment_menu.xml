@@ -11,7 +11,6 @@
 
         android:paddingStart="8dp">
 
-    <!-- TODO This for Admin
     <android.support.design.widget.FloatingActionButton
             android:id="@+id/add_to_menu"
             app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp"
@@ -23,7 +22,7 @@
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
             app:layout_constraintHorizontal_bias="0.953"
-            app:layout_constraintVertical_bias="0.965"/> -->
+            app:layout_constraintVertical_bias="0.965"/>
 
 
 

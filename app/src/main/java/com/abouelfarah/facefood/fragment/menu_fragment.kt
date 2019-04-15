@@ -131,11 +131,11 @@ class menu_fragment : Fragment() {
         })
 
         // TODO This is for admin part
-/*        add_to_menu.setOnClickListener {
+        add_to_menu.setOnClickListener {
             val int = Intent(it.context, pushTheFood::class.java)
             int.putExtra("where", "menu")
             startActivity(int)
-        }*/
+        }
 
 
     }

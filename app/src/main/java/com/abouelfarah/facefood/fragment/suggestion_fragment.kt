@@ -84,6 +84,14 @@ class suggestion_fragment : Fragment() {
 
         return inflater.inflate(R.layout.fragment_suggestion, container, false)
     }
+
+
+    override fun onStop() {
+        adapter.clear()
+        super.onStop()
+    }
+
+
 }
 
 @Suppress("NAME_SHADOWING")
