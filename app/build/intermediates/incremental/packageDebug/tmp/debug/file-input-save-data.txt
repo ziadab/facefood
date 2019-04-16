@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Apr 16 07:22:14 WEST 2019
+0.baseType=DIRECTORY
+0.base=/home/zeus/AndroidStudioProjects/facefood/app/build/intermediates/dex/debug/mergeDexDebug/out
+0.path=classes.dex
+0.set=DEX
+count=1
